@@ -8,7 +8,9 @@ import '../globals.css'
 
 export default function Layout({children}:{children: ReactNode}) {
     return (
-        <div className="flex h-full max-[768px]:flex-col"> 
+        <html lang="en" className="h-screen">
+            <body className="h-screen">
+            <div className="flex h-full max-[768px]:flex-col"> 
             <article className="bg-sky-300 h-full w-[60%] py-7 px-[30px] max-[768px]:w-full flex justify-center items-center">
                 
                 <div className="flex justify-between items-center h-full gap-4 max-[1024px]:flex-col max-[1024px]:justify-center min-[1680px]:max-w-[980px]">
@@ -25,5 +27,8 @@ export default function Layout({children}:{children: ReactNode}) {
               {children}
             </div>
         </div>
+            </body>
+        </html>
+        
     )
 }
